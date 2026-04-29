@@ -1,0 +1,242 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  /* font-family: "DynaPuff", system-ui; */
+  scroll-behavior: smooth;
+}
+:root {
+  --bg-color: #fcf2de;
+  --font-family: "DynaPuff", system-ui;
+  --p-font: "Cause", cursive;
+  --main-color: #c9996b;
+  --secondary: #f0e9b6;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --hover-color: #f0e9b6;
+  --font-weight: bold;
+}
+/* navbar  */
+.show {
+  transform: translateX(0) !important;
+}
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  background-color: var(--bg-color);
+  box-shadow: 1px 1px 5px var(--black-color);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+.nav-container li {
+  display: inline;
+  margin: 0 0.1rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  align-items: center;
+  font-family: var(--font-family);
+}
+.nav-container li a {
+  color: var(--black-color);
+}
+.nav-container li:hover {
+  background-color: var(--main-color);
+  transition: all 0.3s;
+}
+/* menubar css  */
+.menubar {
+  font-size: 1.5rem;
+  color: var(--black-color);
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+/* home css start */
+.home {
+  width: 100%;
+  min-height: 80vh;
+  background-image: url(../img/grafmex-coffee-3120750.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.home .home-info {
+  text-align: center;
+  flex: 0 1 70%;
+  backdrop-filter: blur(3px);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 15px var(--black-color);
+}
+.home .home-info h1 {
+  color: var(--main-color);
+  font-size: 2.5rem;
+  font-family: var(--font-family);
+  margin: 0.5rem 0;
+  text-shadow: 1px 1px 5px var(--black-color);
+}
+.home .home-info p {
+  font-family: var(--p-font);
+  color: var(--main-color);
+  font-weight: var(--font-weight);
+  text-shadow: 1px 1px 5px var(--black-color);
+  margin: 1.1rem 0;
+}
+.home .home-info button {
+  padding: 0.5rem 1.5rem;
+  font-family: var(--font-family);
+  color: var(--white-color);
+  margin: 1rem 0;
+  text-transform: capitalize;
+  background-color: var(--main-color);
+  border: 0px solid var(--bg-color);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: var(--font-weight);
+  transition: all 0.3s;
+}
+.home .home-info button:hover {
+  background-color: var(--main-color);
+  box-shadow: 0px 0px 15px var(--hover-color);
+}
+/* home css end  */
+/* about start  */
+.about {
+  width: 100%;
+  /* height: 100vh; */
+  /* background-image: url(../img/grafmex-coffee-3120750.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem;
+}
+.about div {
+  flex: 1 1 300px;
+}
+.about-img img {
+  width: 90%;
+}
+.about-info h1 {
+  font-family: var(--font-family);
+  font-size: 2rem;
+  color: var(--main-color);
+}
+.about-info p {
+  font-family: var(--p-font);
+  font-size: 1rem;
+  color: var(--main-color);
+  margin: 1rem 0;
+  font-weight: var(--font-weight);
+}
+.about button {
+  padding: 0.5rem 1.5rem;
+  font-family: var(--font-family);
+  color: var(--white-color);
+  margin: 1rem 0;
+  text-transform: capitalize;
+  background-color: var(--main-color);
+  border: 0px solid var(--bg-color);
+  border-radius: 0.2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: var(--font-weight);
+  transition: all 0.3s;
+}
+
+.about button:hover {
+  background-color: var(--main-color);
+  box-shadow: 0px 0px 15px var(--main-color);
+}
+/* about end  */
+
+/* menu start  */
+.menu {
+  width: 100%;
+  padding: 1rem;
+}
+
+.menu-title {
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: var(--main-color);
+}
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.menu-container_card {
+  text-align: center;
+  flex: 0 1 250px;
+}
+.menu-container_card h4 {
+  color: var(--black-color);
+  font-size: 1.2rem;
+  font-family: var(--font-family);
+}
+.menu-container_card p {
+  color: var(--black-color);
+  margin: 1rem 0;
+  font-family: var(--font-family);
+}
+.menu-container_card img {
+  width: 200px;
+}
+/* menu end  */
+/* menus  */
+.menus {
+  width: 100%;
+  padding: 1rem;
+}
+.menuu-title {
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: var(--main-color);
+}
+.menus-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.menus-img {
+  flex: 0 1 300px;
+  text-align: center;
+  font-family: var(--p-font);
+  overflow: hidden;
+  cursor: pointer;
+}
+.menus-img:hover img {
+  transform: scale(1.2);
+}
+.menus-img img {
+  transition: all 0.3s;
+  width: 250px;
+  object-fit: cover;
+}

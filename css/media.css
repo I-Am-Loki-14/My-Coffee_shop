@@ -1,0 +1,31 @@
+@media (max-width: 770px) {
+  .navlinks {
+    display: none;
+  }
+  #navlinks {
+    width: 100%;
+    top: 62px;
+    position: absolute;
+    background-color: #fff1d3;
+    display: block;
+    padding: 0.2rem;
+    transform: translateX(-150%);
+    transition: all 0.3s;
+  }
+  #navlinks li {
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    display: block;
+    border: 1px solid #c9996b;
+    cursor: pointer;
+  }
+  .home .home-info {
+    width: 100%;
+  }
+}
+@media (max-width: 770px) {
+  .home .home-info {
+    flex: 1 1 100%;
+  }
+}
